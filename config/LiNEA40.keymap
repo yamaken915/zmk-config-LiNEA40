@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,
+            //スクロール方向を逆転,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -128,7 +128,22 @@
 
         AltTab {
             bindings = <&kp LA(TAB)>;
-            key-positions = <4 3>;
+            key-positions = <1 2>;
+        };
+
+        WinTab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <0 1>;
+        };
+
+        eigo {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <34 13>;
+        };
+
+        nihongo {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <37 16>;
         };
     };
 
@@ -153,10 +168,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W           &kp E               &kp R             &kp T                                      &kp Y        &kp U             &kp I                &kp O          &kp P
-&kp A          &kp S           &kp D               &mt LANGUAGE_2 F  &kp G                                      &kp H        &mt LANGUAGE_1 J  &kp K                &kp L          &lt 5 MINUS
-&kp Z          &kp X           &kp C               &kp V             &kp B                                      &kp N        &kp M             &kp COMMA            &kp DOT        &mt RIGHT_SHIFT BACKSPACE
-&mt LCTRL ESC  &lt 1 LEFT_WIN  &mt LEFT_ALT GRAVE  &none             &lt 5 ENTER  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 SPACE                    &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
+&kp Q          &kp W           &kp E               &kp R  &kp T                                      &kp Y        &kp U  &kp I                &kp O          &kp P
+&kp A          &kp S           &kp D               &kp F  &kp G                                      &kp H        &kp J  &kp K                &kp L          &lt 5 MINUS
+&kp Z          &kp X           &kp C               &kp V  &kp B                                      &kp N        &kp M  &kp COMMA            &kp DOT        &mt RIGHT_SHIFT EQUAL
+&mt LCTRL ESC  &lt 1 LEFT_WIN  &mt LEFT_ALT GRAVE  &none  &lt 5 ENTER  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 SPACE         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
