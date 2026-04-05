@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -93,27 +93,27 @@
 
         CtrlS {
             bindings = <&kt LC(S)>;
-            key-positions = <11 12>;
+            key-positions = <11 34>;
         };
 
         CtrlA {
             bindings = <&kt LC(A)>;
-            key-positions = <10 11>;
+            key-positions = <10 34>;
         };
 
         CtrlX {
             bindings = <&kt LC(X)>;
-            key-positions = <21 22>;
+            key-positions = <21 34>;
         };
 
         CtrlC {
             bindings = <&kt LC(C)>;
-            key-positions = <22 23>;
+            key-positions = <22 34>;
         };
 
         CtrlV {
             bindings = <&kt LC(V)>;
-            key-positions = <23 24>;
+            key-positions = <23 34>;
         };
 
         WinV {
@@ -148,7 +148,7 @@
 
         CtrlZ {
             bindings = <&kp LC(Z)>;
-            key-positions = <20 21>;
+            key-positions = <20 34>;
         };
     };
 
