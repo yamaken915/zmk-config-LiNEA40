@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -103,22 +103,22 @@
 
         eigo {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <26 28>;
+            key-positions = <26 29>;
         };
 
         nihongo {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <16 18>;
+            key-positions = <16 19>;
         };
 
         teams_editmode {
             bindings = <&kp LS(LC(X))>;
-            key-positions = <11 13>;
+            key-positions = <20 23>;
         };
 
         CapsWords {
             bindings = <&caps_word>;
-            key-positions = <21 23>;
+            key-positions = <13 10>;
         };
     };
 
