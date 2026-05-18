@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -160,7 +160,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E               &kp R    &kp T                                     &kp Y        &kp U  &kp I           &kp O          &kp P
-&HM LCTRL A       &kp S         &kp D               &lt 7 F  &kp G                                     &kt H        &kp J  &kp K           &kp L          &HM LEFT_CONTROL MINUS
+&HM LCTRL A       &kp S         &kp D               &lt 7 F  &kp G                                     &kp H        &kp J  &kp K           &kp L          &HM LEFT_CONTROL MINUS
 &HM LEFT_SHIFT Z  &kp X         &kp C               &kp V    &kp B                                     &kp N        &kp M  &kp COMMA       &kp DOT        &HM RIGHT_SHIFT EQUAL
 &kp ESC           &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &none    &lt 2 SPACE  &lt 4 TAB    &lt 5 QUESTION  &lt 3 ENTER         &lt 6 LEFT_WIN  &kp BACKSLASH  &mt LEFT_ALT SLASH
             >;
@@ -234,10 +234,10 @@
 
         MOUSE {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans
-&kp LCTRL       &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &trans  &mkp RCLK  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans
-&trans          &trans  &trans  &none   &trans  &trans    &trans  &trans             &trans  &trans     &trans
+&trans          &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans     &trans
+&kp LCTRL       &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &mkp RCLK  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans     &trans
+&trans          &trans  &trans  &none   &trans  &trans    &trans  &trans            &trans  &trans     &trans
             >;
         };
     };
