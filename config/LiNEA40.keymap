@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -189,7 +189,7 @@
 &kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR      &kp PERCENT                         &kp CARET          &kp AMPERSAND    &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5                              &kp NUMBER_6       &kp N7           &kp N8         &kp N9                &kp N0
 &trans           &trans        &trans        &kp LEFT_BRACE  &kp LEFT_BRACKET                    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp LESS_THAN  &kp GREATER_THAN      &kp PLUS
-&trans           &trans        &trans        &none           &trans            &trans    &trans  &kp LANG2                           &trans         &kp PIPE              &kp QUESTION
+&kp LANGUAGE_2   &trans        &trans        &none           &trans            &trans    &trans  &kp LANG2                           &trans         &kp PIPE              &kp QUESTION
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -200,7 +200,7 @@
 &trans            &kp LC(W)     &trans         &kp F4         &kp LC(T)                           &trans            &kp PAGE_UP  &kp UP_ARROW    &kp PAGE_DOWN  &kp BACKSPACE
 &kp LEFT_CONTROL  &trans        &kp LS(LC(D))  &kp LC(LS(L))  &kp F2                              &kp F10           &kp LEFT     &kp DOWN        &kp RIGHT      &kp DELETE
 &kp LEFT_SHIFT    &trans        &kp LC(LS(C))  &kp LS(LC(V))  &kp LEFT_WIN                        &kp LS(LC(DOWN))  &kp HOME     &msc SCRL_DOWN  &kp END        &kp LS(LC(RIGHT))
-&kp LC(COLON)     &kp LC(SEMI)  &kp LEFT_ALT   &none          &kp LANG1     &caps_word    &trans  &trans                         &trans          &trans         &trans
+&kp LC(COLON)     &kp LC(SEMI)  &kp LEFT_ALT   &none          &kp LANG1     &caps_word    &trans  &trans                         &trans          &trans         &kp LANGUAGE_1
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
