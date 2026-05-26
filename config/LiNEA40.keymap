@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -65,11 +65,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        CenterClick {
-            bindings = <&mkp MB3>;
-            key-positions = <16 18>;
-        };
 
         RightClick {
             bindings = <&mkp MB2>;
@@ -99,11 +94,6 @@
         teams_editmode {
             bindings = <&kp LS(LC(X))>;
             key-positions = <20 23>;
-        };
-
-        allselect {
-            bindings = <&kp LC(A)>;
-            key-positions = <10 11>;
         };
     };
 
